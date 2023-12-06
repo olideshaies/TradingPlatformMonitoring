@@ -19,7 +19,7 @@ def encrypt_message(message, key):
 key = load_key()
 
 username = "olilechef13"
-password = "Olivier13!"
+password = 
 
 encrypted_username = encrypt_message(username, key)
 encrypted_password = encrypt_message(password, key)

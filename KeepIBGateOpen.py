@@ -36,12 +36,12 @@ def decrypt_message(encrypted_message, key):
 def login_to_IB_app(running_app):
     if running_app == "TWS":
         # Coordinates for the Paper Trading
-        coordinate_x = 801
-        coordinate_y = 454
+        coordinate_x = 1268
+        coordinate_y = 1920
     elif running_app == "Gateway":
         # Coordinates for the Paper Trading
-        coordinate_x = 801
-        coordinate_y = 454
+        coordinate_x = 750
+        coordinate_y = 512
 
     pyautogui.click(x=coordinate_x, y=coordinate_y)
     
@@ -73,12 +73,12 @@ while True:
         
         # Add a bit more wait time for the app to fully launch
         if running_app == "TWS":
-            time.sleep(5)
+            time.sleep(10)
         elif running_app == "Gateway":
-            time.sleep(3)
+            time.sleep(5)
         login_to_IB_app(running_app)
     else:
         print("IB App is running.")
     
     # Check every minute
-    time.sleep(3)
+    time.sleep(60)
